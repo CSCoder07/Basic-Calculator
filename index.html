@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1 style="text-align:center">Calculator App</h1>
+    <div class="container">
+    <br>
+    <table>
+        <tr>
+            <td colspan="3"><input type='text' id='result' class ='screen' style="text-align: left;"></td>
+            <td>
+                <input type="button"value='C'onClick="clearScreen()"class="clear"/>
+            </td>
+        </tr>
+    
+    <div class="keys">
+        <tr>
+            <td>
+                <input type="button" value="1" class="button" onClick="display('1')"></input>
+            </td>
+            <td>
+                <input type="button" value="2" class="button " onClick="display('2')"></input>
+            </td>
+            <td>
+                <input type="button" value="3" class="button" onClick="display('3')"></input>
+            </td>
+            <td>
+                <input type="button" value="/" class="operator" onClick="display('/')"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" class="button" onClick="display('4')"></input>
+            </td>
+            <td>
+                <input type="button" value="5" class="button" onClick="display('5')"></input>
+            </td>
+            <td>
+                <input type="button" value="6" class="button" onClick="display('6')"></input>
+            </td>
+            <td>
+                <input type="button" value="*" class="operator" onClick="display('*')"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <input type="button" value="7" class="button" onClick="display('7')"></input>
+            </td>
+            <td>
+                <input type="button" value="8" class="button" onClick="display('8')"></input>
+            </td>
+            <td>
+                <input type="button" value="9" class="button" onClick="display('9')"></input>
+            </td>
+            <td>
+                <input type="button" value="-" class="operator" onClick="display('-')"></input>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="." class="decimal" onClick="display('.')"></input>
+            </td>
+            <td>
+                <input type="button" value="0" class="button" onClick="display('0')"></input>
+            </td>
+            <td>
+                <input type="button" value= "=" class="equal" onClick="solve()"></input>
+            </td>
+            <td>
+                <input type="button" value="+" class="operator" onClick="display('+')"></input>
+            </td>
+        </tr>
+    </div>
+</table>
+    <script src="app.js"></script>
+</body>
+</html>
